@@ -1,5 +1,14 @@
 import type { IconType } from "react-icons";
-import { FiMail, FiPhone, FiMapPin, FiGlobe, FiCode } from "react-icons/fi";
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiGlobe,
+  FiCode,
+  FiBriefcase,
+  FiBook,
+  FiAward,
+} from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 import { LuPuzzle } from "react-icons/lu";
 
@@ -60,4 +69,205 @@ export interface Project { title: string; category: "Frontend" | "Full Stack"; i
 export const projects: Project[] = [
   { title: "Chat App", category: "Full Stack", image: "https://placehold.co/800x400/1e1e1f/ffdb70?text=Chat+App", github: "#", live: "#" },
   { title: "Restaurant Site", category: "Frontend", image: "https://placehold.co/800x400/1e1e1f/ffdb70?text=Restaurant", github: "#", live: "#" },
+];
+
+// ---------- Resume data ----------
+
+export interface ResumeSkill {
+  label: string;
+  value: string;
+}
+
+export interface ResumeTimelineItem {
+  title: string;
+  meta?: string;
+  bullets: string[];
+}
+
+export interface ResumeSkillsSection {
+  id: string;
+  title: string;
+  icon: IconType;
+  type: "skills";
+  items: ResumeSkill[];
+}
+
+export interface ResumeTimelineSection {
+  id: string;
+  title: string;
+  icon: IconType;
+  type: "timeline";
+  items: ResumeTimelineItem[];
+}
+
+export type ResumeSection =
+  | ResumeSkillsSection
+  | ResumeTimelineSection;
+
+export const resumeSections: ResumeSection[] = [
+  {
+    id: "skills",
+    title: "Technical Skills",
+    icon: FiCode,
+    type: "skills",
+    items: [
+      { label: "Languages", value: "Java, HTML, CSS, JavaScript" },
+      {
+        label: "Developer Tools",
+        value: "Git, GitHub, Postman, REST APIs, Render, IntelliJ IDEA, VS Code",
+      },
+      {
+        label: "Technologies/Frameworks",
+        value: "React JS, Redux, Context API, Tailwind CSS, Node.js, Express.js",
+      },
+      { label: "Database", value: "MySQL, MongoDB" },
+      { label: "CS Fundamentals", value: "OOP, DBMS" },
+    ],
+  },
+
+  {
+    id: "experience",
+    title: "Experience",
+    icon: FiBriefcase,
+    type: "timeline",
+    items: [
+      {
+        title: "Mahaveer Enterprises",
+        meta: "Feb 2025 – May 2025, Mumbai, Maharashtra",
+        bullets: [
+          "Developed a responsive product showcase website from scratch using HTML5, CSS3, and JavaScript.",
+          "Gained hands-on experience in real-world UI/UX implementation and responsive design principles.",
+          "Implemented and managed 500+ products on the platform with structured layouts, categories, and interactive features.",
+        ],
+      },
+      {
+        title: "Celebal Technologies",
+        meta: "May 2025 – July 2025, Jaipur, Rajasthan",
+        bullets: [
+          "Gained hands-on experience with Node.js and core Express.js concepts for building scalable backend applications.",
+          "Implemented JWT authentication to secure APIs and manage user sessions effectively.",
+          "Built a Collaborative Code Editor as the final project, featuring real-time multi-user editing, code synchronization, and secure access control using Node.js, Express.js, and WebSockets.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "projects",
+    title: "Projects",
+    icon: FiCode,
+    type: "timeline",
+    items: [
+      {
+        title: "SynCode (Node.js Internship Project)",
+        bullets: [
+          "Built and deployed a real-time collaborative code editor using Node.js, Express.js, and WebSockets, enabling multiple users to edit simultaneously.",
+          "Integrated JDoodle API for code execution and Monaco Editor for enhanced code editing experience.",
+          "Implemented JWT authentication, session-based collaboration rooms, and dark/light theme support.",
+        ],
+      },
+      {
+        title: "Chatty",
+        bullets: [
+          "Developed and deployed a full-stack chat application using React.js, Node.js, and MongoDB with real-time messaging using Socket.io.",
+          "Implemented JWT-based authentication with cookie management and utilized Cloudinary for image uploads.",
+          "Implemented real-time messaging with WebSockets for seamless one-to-one and group conversations.",
+          "Enhanced user experience with 32 customizable themes using daisyUI.",
+          "Designed and optimized MongoDB database schemas for efficient storage and retrieval of chat history.",
+        ],
+      },
+      {
+        title: "Burger Beasts",
+        bullets: [
+          "Developed a dynamic homepage for Burger Beast using React.js, creating an engaging and responsive user interface that adapts seamlessly across devices.",
+          "Implemented React Router to enable smooth navigation and enhance user experience.",
+          "Added interactive UI components with React Bootstrap.",
+        ],
+      },
+      {
+        title: "Spotify Clone",
+        bullets: [
+          "Developed a full-stack Spotify clone using React.js, Node.js, and MongoDB.",
+          "Integrated Spotify API for music playback and authentication.",
+          "Implemented user authentication and authorization using JWT.",
+          "Utilized Cloudinary for image uploads and storage.",
+        ],
+      },
+      {
+        title: "Virtual Garden",
+        bullets: [
+          "Developed a responsive and interactive virtual garden using React.js and CSS3.",
+          "Integrated real-time data updates and user interactions.",
+          "Implemented backend functionality using Node.js and MongoDB.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "education",
+    title: "Education",
+    icon: FiBook,
+    type: "timeline",
+    items: [
+      {
+        title: "Swami Keshvanand Institute Of Technology",
+        meta: "Nov. 2022 – May 2026",
+        bullets: [
+          "Bachelor of Technology in Information Technology",
+          "CGPA - 8.2",
+          "Location: Jaipur, Rajasthan",
+        ],
+      },
+      {
+        title: "St. Wilfred's School",
+        meta: "April 2021 – May 2022",
+        bullets: [
+          "12th class",
+          "Percentage - 61.00",
+          "Location: Jaipur, Rajasthan",
+        ],
+      },
+      {
+        title: "Springfield School",
+        meta: "April 2019 – April 2020",
+        bullets: [
+          "10th class (CISCE)",
+          "Percentage - 76.2%",
+          "Location: Jaipur, Rajasthan",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "leadership",
+    title: "Leadership / Extracurricular / Achievement",
+    icon: FiAward,
+    type: "timeline",
+    items: [
+      {
+        title: "Non-Tech Committee Head In Pravah",
+        meta: "2023 college fest",
+        bullets: [
+          "Led and managed 25 teams during the college fest.",
+        ],
+      },
+      {
+        title: "Smart India Hackathon 2024",
+        meta: "Sept 2024 – Nov 2024, Swami Keshvanand Institute of Technology",
+        bullets: [
+          "Secured 26th position in the college prelims of SIH 2024.",
+          "Competed among 120 teams.",
+        ],
+      },
+      {
+        title: "LeetCode Achievements",
+        bullets: [
+          "Earned 100 Days Badge on LeetCode.",
+          "Solved 250+ problems on LeetCode.",
+        ],
+      },
+    ],
+  },
 ];
