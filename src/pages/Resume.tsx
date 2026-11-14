@@ -9,7 +9,7 @@ export default function Resume() {
       <Heading>Resume</Heading>
 
       <a
-        href="/Devansh_Indoliyan__CV%20(2).pdf"
+        href={`${import.meta.env.BASE_URL}Devansh_Indoliyan__CV%20(2).pdf`}
         download="Devansh_Indoliyan_CV.pdf"
         className="btn center"
       >

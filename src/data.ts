@@ -19,7 +19,7 @@ export const TABS: Tab[] = ["About", "Resume", "Project", "Experience", "Contact
 export interface Profile { name: string; title: string; email: string; phone: string; location: string; avatar: string }
 export const profile: Profile = {
   name: "Devansh Indoliyan", title: "Software Developer", email: "devanshindoliyan2123@gmail.com",
-  phone: "+91 8279545085", location: "Uttarakhand, India", avatar: "/profile.jpeg",
+  phone: "+91 8279545085", location: "Uttarakhand, India", avatar: `${import.meta.env.BASE_URL}profile.jpeg`,
 };
 
 // Icons come from react-icons (https://react-icons.github.io/react-icons/).

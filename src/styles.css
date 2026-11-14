@@ -590,7 +590,7 @@ figure:hover .overlay,figure:focus-within .overlay{opacity:1}
 
 
 /* ==========================================
-   SHOW CONTACTS BUTTON - COMPACT GOLD DESIGN
+  SHOW CONTACTS BUTTON - COMPACT GOLD DESIGN
    ========================================== */
 
 @media (max-width: 1024px) {
@@ -1040,4 +1040,3 @@ figure:hover .overlay,figure:focus-within .overlay{opacity:1}
     transition: none !important;
   }
 }
-gi 
