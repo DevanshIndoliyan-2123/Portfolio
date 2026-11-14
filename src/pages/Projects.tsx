@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 import Heading from "../components/Heading";
 import { projects } from "../data";
 
-const CATEGORIES = ["All", "Frontend", "Full Stack"];
+const CATEGORIES = ["All", "Frontend","Backend", "Full Stack"];
 
 const external = (href: string) =>
   href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {};
