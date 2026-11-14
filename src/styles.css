@@ -213,3 +213,60 @@ figure:hover .overlay,figure:focus-within .overlay{opacity:1}
 @media(min-width:1025px) and (max-height:700px){
   .sidebar{position:static}
 }
+
+
+/* ---------- Dynamic Resume Sections ---------- */
+
+
+/* ---------- Dynamic Resume Sections ---------- */
+
+.resume-sections {
+  margin-top: 25px;
+}
+
+.resume-section + .resume-section {
+  margin-top: 30px;
+}
+
+.resume-section .h3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.resume-skills {
+  display: grid;
+  gap: 12px;
+}
+
+.resume-skills li {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.resume-skills li strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.resume-bullets {
+  margin-top: 8px;
+}
+
+.resume-bullets .text {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .resume-section + .resume-section {
+    margin-top: 24px;
+  }
+
+  .resume-skills li,
+  .resume-bullets .text {
+    font-size: 13px;
+  }
+}
