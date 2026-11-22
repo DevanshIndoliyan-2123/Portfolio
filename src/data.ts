@@ -1,4 +1,5 @@
 import type { IconType } from "react-icons";
+import { SiLeetcode } from "react-icons/si";
 import {
   FiMail,
   FiPhone,
@@ -8,6 +9,7 @@ import {
   FiBriefcase,
   FiBook,
   FiAward,
+
 } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 import { LuPuzzle } from "react-icons/lu";
@@ -35,9 +37,9 @@ export const contacts: ContactItem[] = [
 export interface Social { label: string; href: string; icon: IconType }
 export const socials: Social[] = [
   { label: "GitHub", href: "https://github.com/DevanshIndoliyan-2123", icon: FaGithub },
-  { label: "Portfolio", href: "#", icon: FiGlobe },
-  { label: "LinkedIn", href: "#", icon: FaLinkedinIn },
-  { label: "Instagram", href: "#", icon: FaInstagram },
+  { label: "Insta", href: "https://www.instagram.com/dev.boot.yml?gwpx=OGpxb3N4eWtqY2J0", icon: FaInstagram },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/devansh-indoliyan/", icon: FaLinkedinIn },
+  { label: "Leetcode", href: "https://leetcode.com/u/Devansh_Indoliyan2123/", icon: SiLeetcode },
 ];
 
 export interface Service { title: string; text: string; icon: IconType }
@@ -46,9 +48,15 @@ export const aboutText: string[] = [
   "I understand the importance of secure authentication and authorization, and I've implemented login and registration flows and OAuth 2.0 in my projects. I also have a basic foundation in multithreading and a focus on writing clean, maintainable code. Alongside backend skills, I have working knowledge of frontend technologies, which helps me integrate APIs smoothly with the UI. This lets me collaborate effectively with frontend developers, designers, and other backend engineers to deliver reliable, scalable systems.",
 ];
 export const services: Service[] = [
-  { title: "Development", text: "Building responsive and scalable applications using modern technologies.", icon: FiCode },
-  { title: "Competitive Programming", text: "Solving complex algorithmic problems and joining coding contests.", icon: LuPuzzle },
-  { title: "Freelancing", text: "Providing professional development services to clients worldwide.", icon: FiGlobe },
+  { title: "Development",
+    text: "Building responsive and scalable applications using modern technologies.",
+    icon: FiCode },
+  { title: "Competitive Programming",
+    text: "Solving complex algorithmic problems and joining coding contests.", 
+    icon: LuPuzzle },
+  { title: "Freelancing", 
+    text: "Providing professional development services to clients worldwide.", 
+    icon: FiGlobe },
 ];
 
 export interface Skill { label: string; value: string }
@@ -118,10 +126,10 @@ export const resumeSections: ResumeSection[] = [
       },
       {
         label: "Technologies/Frameworks",
-        value: "React JS, Redux, Context API, Tailwind CSS, Node.js, Express.js",
+        value: "React JS, Spring Boot, Spring Data, Hibernate/JPa, Spring Security",
       },
-      { label: "Database", value: "MySQL, MongoDB" },
-      { label: "CS Fundamentals", value: "OOP, DBMS" },
+      { label: "Database", value: "MySQL, PostgreSql" },
+      { label: "CS Fundamentals", value: "OOP's, DBMS, Operating System. Computer Network" },
     ],
   },
 
@@ -132,8 +140,8 @@ export const resumeSections: ResumeSection[] = [
     type: "timeline",
     items: [
       {
-        title: "Mahaveer Enterprises",
-        meta: "Feb 2025 – May 2025, Mumbai, Maharashtra",
+        title: "Cognifyz Technologies",
+        meta: "Aug 2025 – Sep 2025, Pune, Maharashtra",
         bullets: [
           "Developed a responsive product showcase website from scratch using HTML5, CSS3, and JavaScript.",
           "Gained hands-on experience in real-world UI/UX implementation and responsive design principles.",
@@ -148,7 +156,7 @@ export const resumeSections: ResumeSection[] = [
           "Implemented JWT authentication to secure APIs and manage user sessions effectively.",
           "Built a Collaborative Code Editor as the final project, featuring real-time multi-user editing, code synchronization, and secure access control using Node.js, Express.js, and WebSockets.",
         ],
-      },
+      }, 
     ],
   },
 
