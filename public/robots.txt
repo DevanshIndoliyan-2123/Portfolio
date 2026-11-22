@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devansh-portfolio-nimy.onrender.com/sitemap.xml

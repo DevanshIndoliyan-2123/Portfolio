@@ -148,15 +148,7 @@ export const resumeSections: ResumeSection[] = [
           "Implemented and managed 500+ products on the platform with structured layouts, categories, and interactive features.",
         ],
       },
-      {
-        title: "Celebal Technologies",
-        meta: "May 2025 – July 2025, Jaipur, Rajasthan",
-        bullets: [
-          "Gained hands-on experience with Node.js and core Express.js concepts for building scalable backend applications.",
-          "Implemented JWT authentication to secure APIs and manage user sessions effectively.",
-          "Built a Collaborative Code Editor as the final project, featuring real-time multi-user editing, code synchronization, and secure access control using Node.js, Express.js, and WebSockets.",
-        ],
-      }, 
+       
     ],
   },
 
@@ -167,7 +159,7 @@ export const resumeSections: ResumeSection[] = [
     type: "timeline",
     items: [
       {
-        title: "SynCode (Node.js Internship Project)",
+        title: "",
         bullets: [
           "Built and deployed a real-time collaborative code editor using Node.js, Express.js, and WebSockets, enabling multiple users to edit simultaneously.",
           "Integrated JDoodle API for code execution and Monaco Editor for enhanced code editing experience.",
@@ -263,7 +255,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        title: "Non-Tech Committee Head In Pravah",
+        title: "Non-Tech Committee Head In  VIBGYOR",
         meta: "2023 college fest",
         bullets: [
           "Led and managed 25 teams during the college fest.",
