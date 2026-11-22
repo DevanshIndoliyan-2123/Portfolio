@@ -69,8 +69,15 @@ export const skills: Skill[] = [
 
 export interface Job { company: string; period: string; points: string[] }
 export const jobs: Job[] = [
-  { company: "Company One", period: "Feb 2025 – May 2025, City", points: ["Built a responsive website with HTML, CSS and JavaScript.", "Managed 500+ products with structured layouts."] },
-  { company: "Company Two", period: "May 2025 – Jul 2025, City", points: ["Worked on a full-stack feature using Node.js and MongoDB."] },
+  {
+    company: "Cognifyz Technologies",
+    period: "Aug 2025 – Sep 2025, Pune",
+    points: [
+      "Developed and tested RESTful APIs using Java and Spring Boot, following a layered controller-service-repository architecture.",
+      "Implemented database operations with Spring Data JPA and MySQL/PostgreSQL, including entity mapping, CRUD functionality and input validation.",
+      "Debugged and fixed backend issues, tested endpoints with Postman, and followed clean-code practices while collaborating with the team through Git and GitHub.",
+    ],
+  },
 ];
 
 export interface Project { title: string; category: "Frontend" | "Full Stack"; image: string; github: string; live: string }
