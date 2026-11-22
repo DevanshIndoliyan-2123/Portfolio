@@ -219,30 +219,30 @@ export const resumeSections: ResumeSection[] = [
     type: "timeline",
     items: [
       {
-        title: "Swami Keshvanand Institute Of Technology",
-        meta: "Nov. 2022 – May 2026",
+        title: "Tula's Institute of Dehradun",
+        meta: "Sep. 2022 – Aug 2026",
         bullets: [
           "Bachelor of Technology in Information Technology",
-          "CGPA - 8.2",
-          "Location: Jaipur, Rajasthan",
+          "CGPA - 7.02",
+          "Location: Dehradun, Uttarakhand",
         ],
       },
       {
-        title: "St. Wilfred's School",
+        title: "Holy Ganges Public School",
         meta: "April 2021 – May 2022",
         bullets: [
           "12th class",
-          "Percentage - 61.00",
-          "Location: Jaipur, Rajasthan",
+          "Percentage - 70.5",
+          "Location: Haridwar, Uttarakhand",
         ],
       },
       {
-        title: "Springfield School",
+        title: "Holy Ganges Public School",
         meta: "April 2019 – April 2020",
         bullets: [
-          "10th class (CISCE)",
-          "Percentage - 76.2%",
-          "Location: Jaipur, Rajasthan",
+          "10th class",
+          "Percentage - 75%",
+          "Location: Haridwar, Uttarakhand",
         ],
       },
     ],
@@ -255,6 +255,14 @@ export const resumeSections: ResumeSection[] = [
     type: "timeline",
     items: [
       {
+        title: "Hack for Future 2.0",
+        meta: "3rd Place – Hack for Future 2.0 (National-Level Hackathon)",
+        bullets: [
+          "Secured 3rd position among 79 teams in a 30-hour national-level hackathon at Tula's Institute, Dehradun. ",
+          "CG monitoring device to improve accessibility to cardiac health monitoring through innovation and teamwork.",
+        ],
+      },
+      {
         title: "Non-Tech Committee Head In Pravah",
         meta: "2023 college fest",
         bullets: [
@@ -262,18 +270,10 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        title: "Smart India Hackathon 2024",
-        meta: "Sept 2024 – Nov 2024, Swami Keshvanand Institute of Technology",
-        bullets: [
-          "Secured 26th position in the college prelims of SIH 2024.",
-          "Competed among 120 teams.",
-        ],
-      },
-      {
         title: "LeetCode Achievements",
         bullets: [
           "Earned 100 Days Badge on LeetCode.",
-          "Solved 250+ problems on LeetCode.",
+          "Solved 300+ problems on LeetCode.",
         ],
       },
     ],
